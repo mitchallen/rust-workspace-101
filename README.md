@@ -4,10 +4,6 @@ rust-workspace-101
 ## Usage
 
 ```sh
-cargo check
-```
-
-```sh
 make
 ```
 
@@ -17,5 +13,11 @@ PROJECT=project1 make run
 
 ```sh
 PROJECT=project2 make run
+```
+
+* * *
+
+```sh
+cargo check
 ```
 
