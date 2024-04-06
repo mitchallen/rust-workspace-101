@@ -1,0 +1,32 @@
+[package]
+name = "project2"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+description = "A brief description of project1"
+license = "MIT OR Apache-2.0"
+
+# Specify the Rust edition to use.
+edition = "2018" # or "2021", depending on your preference
+
+# Dependencies for your project
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+log = "0.4"
+
+# If you have local dependencies within your monorepo, specify them like this:
+# common = { path = "../common" }
+
+# Example of a binary target (if your project is a binary crate)
+[[bin]]
+name = "project2"
+path = "src/main.rs"
+
+# If your project includes integration tests
+[[test]]
+name = "integration_test"
+path = "tests/integration_test.rs"
+
+# Enable this if you're using a workspace and want to exclude this package from the default members.
+# [workspace]
+# exclude = ["project2"]

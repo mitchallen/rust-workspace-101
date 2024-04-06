@@ -1,0 +1,16 @@
+[package]
+name = "rust-workspace-101"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "project1",
+    "project2"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
